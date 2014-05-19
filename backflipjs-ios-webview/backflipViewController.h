@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface backflipViewController : UIViewController
+@interface backflipViewController : UIViewController <UIWebViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UIWebView *mobileWebView;
+
+@property NSString *baseURL;
+@property NSString *webScheme;
+
+@property (assign) BOOL isReachable;
 
 @end

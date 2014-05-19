@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E9AD179FE3C41CFBA1FEA6D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7F4EFCDB7E43E19307DEB7 /* libPods.a */; };
 		B58CDE8E192933AC001924C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58CDE8D192933AC001924C7 /* Foundation.framework */; };
 		B58CDE90192933AC001924C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58CDE8F192933AC001924C7 /* CoreGraphics.framework */; };
 		B58CDE92192933AC001924C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58CDE91192933AC001924C7 /* UIKit.framework */; };
@@ -22,6 +23,9 @@
 		B58CDEB2192933AC001924C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58CDE91192933AC001924C7 /* UIKit.framework */; };
 		B58CDEBA192933AC001924C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B58CDEB8192933AC001924C7 /* InfoPlist.strings */; };
 		B58CDEBC192933AC001924C7 /* backflipjs_ios_webviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B58CDEBB192933AC001924C7 /* backflipjs_ios_webviewTests.m */; };
+		B58CDEC619293438001924C7 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B58CDEC519293438001924C7 /* Podfile */; };
+		B58CDEC8192980C9001924C7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58CDEC7192980C9001924C7 /* SystemConfiguration.framework */; };
+		B58CDECC19299283001924C7 /* WebViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = B58CDECB19299283001924C7 /* WebViewProxy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05D61C9A55574545AA6E5477 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		AC7F4EFCDB7E43E19307DEB7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B58CDE8A192933AC001924C7 /* backflipjs-ios-webview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "backflipjs-ios-webview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B58CDE8D192933AC001924C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B58CDE8F192933AC001924C7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +61,10 @@
 		B58CDEB7192933AC001924C7 /* backflipjs-ios-webviewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "backflipjs-ios-webviewTests-Info.plist"; sourceTree = "<group>"; };
 		B58CDEB9192933AC001924C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B58CDEBB192933AC001924C7 /* backflipjs_ios_webviewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = backflipjs_ios_webviewTests.m; sourceTree = "<group>"; };
+		B58CDEC519293438001924C7 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		B58CDEC7192980C9001924C7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B58CDECA19299275001924C7 /* WebViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewProxy.h; sourceTree = "<group>"; };
+		B58CDECB19299283001924C7 /* WebViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewProxy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +72,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B58CDEC8192980C9001924C7 /* SystemConfiguration.framework in Frameworks */,
 				B58CDE90192933AC001924C7 /* CoreGraphics.framework in Frameworks */,
 				B58CDE92192933AC001924C7 /* UIKit.framework in Frameworks */,
 				B58CDE8E192933AC001924C7 /* Foundation.framework in Frameworks */,
+				0E9AD179FE3C41CFBA1FEA6D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,10 +96,12 @@
 		B58CDE81192933AC001924C7 = {
 			isa = PBXGroup;
 			children = (
+				B58CDEC519293438001924C7 /* Podfile */,
 				B58CDE93192933AC001924C7 /* backflipjs-ios-webview */,
 				B58CDEB5192933AC001924C7 /* backflipjs-ios-webviewTests */,
 				B58CDE8C192933AC001924C7 /* Frameworks */,
 				B58CDE8B192933AC001924C7 /* Products */,
+				05D61C9A55574545AA6E5477 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,10 +117,12 @@
 		B58CDE8C192933AC001924C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B58CDEC7192980C9001924C7 /* SystemConfiguration.framework */,
 				B58CDE8D192933AC001924C7 /* Foundation.framework */,
 				B58CDE8F192933AC001924C7 /* CoreGraphics.framework */,
 				B58CDE91192933AC001924C7 /* UIKit.framework */,
 				B58CDEAF192933AC001924C7 /* XCTest.framework */,
+				AC7F4EFCDB7E43E19307DEB7 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,6 +130,7 @@
 		B58CDE93192933AC001924C7 /* backflipjs-ios-webview */ = {
 			isa = PBXGroup;
 			children = (
+				B58CDEC919299250001924C7 /* libs */,
 				B58CDE9C192933AC001924C7 /* backflipAppDelegate.h */,
 				B58CDE9D192933AC001924C7 /* backflipAppDelegate.m */,
 				B58CDE9F192933AC001924C7 /* Main_iPhone.storyboard */,
@@ -155,6 +172,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B58CDEC919299250001924C7 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				B58CDECA19299275001924C7 /* WebViewProxy.h */,
+				B58CDECB19299283001924C7 /* WebViewProxy.m */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,9 +188,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B58CDEBF192933AC001924C7 /* Build configuration list for PBXNativeTarget "backflipjs-ios-webview" */;
 			buildPhases = (
+				F1121ECCF0474986810B880C /* Check Pods Manifest.lock */,
 				B58CDE86192933AC001924C7 /* Sources */,
 				B58CDE87192933AC001924C7 /* Frameworks */,
 				B58CDE88192933AC001924C7 /* Resources */,
+				BD5CF4E35A3D46B4AD8230A3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B58CDEC619293438001924C7 /* Podfile in Resources */,
 				B58CDEA4192933AC001924C7 /* Main_iPad.storyboard in Resources */,
 				B58CDEA9192933AC001924C7 /* Images.xcassets in Resources */,
 				B58CDEA1192933AC001924C7 /* Main_iPhone.storyboard in Resources */,
@@ -249,11 +278,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BD5CF4E35A3D46B4AD8230A3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1121ECCF0474986810B880C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B58CDE86192933AC001924C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B58CDECC19299283001924C7 /* WebViewProxy.m in Sources */,
 				B58CDE9E192933AC001924C7 /* backflipAppDelegate.m in Sources */,
 				B58CDEA7192933AC001924C7 /* backflipViewController.m in Sources */,
 				B58CDE9A192933AC001924C7 /* main.m in Sources */,
@@ -388,6 +451,7 @@
 		};
 		B58CDEC0192933AC001924C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05D61C9A55574545AA6E5477 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -401,6 +465,7 @@
 		};
 		B58CDEC1192933AC001924C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05D61C9A55574545AA6E5477 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -471,6 +536,7 @@
 				B58CDEC1192933AC001924C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B58CDEC2192933AC001924C7 /* Build configuration list for PBXNativeTarget "backflipjs-ios-webviewTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +545,7 @@
 				B58CDEC4192933AC001924C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

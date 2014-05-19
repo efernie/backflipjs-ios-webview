@@ -1,0 +1,37 @@
+PODS:
+  - AFNetworking (2.2.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
+  - AFNetworking/NSURLConnection (2.2.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.2.4):
+    - AFNetworking/NSURLConnection
+  - AFNetworking/Reachability (2.2.4)
+  - AFNetworking/Security (2.2.4)
+  - AFNetworking/Serialization (2.2.4)
+  - AFNetworking/UIKit (2.2.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - Reachability (3.1.1)
+  - RNCryptor (2.2)
+  - STHTTPRequest (1.0.0)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.0)
+  - Reachability (~> 3.1.1)
+  - RNCryptor (~> 2.2)
+  - STHTTPRequest (~> 1.0.0)
+
+SPEC CHECKSUMS:
+  AFNetworking: 01aa7c3aa9a200b94943e54072a4373f14b3d219
+  Reachability: be4883bb93f31e38266ae3365e5600a317aae735
+  RNCryptor: 1420380792b33758d2414cf37af160ea2495e15c
+  STHTTPRequest: 5d4d7cb7cb7ab3a57849d0effd2d77508417babc
+
+COCOAPODS: 0.32.1
