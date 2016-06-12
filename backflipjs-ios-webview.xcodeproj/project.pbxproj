@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E9AD179FE3C41CFBA1FEA6D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7F4EFCDB7E43E19307DEB7 /* libPods.a */; };
+		B54BB8271937CC3F0089B05C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54BB8261937CC3F0089B05C /* CoreLocation.framework */; };
 		B58CDE8E192933AC001924C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58CDE8D192933AC001924C7 /* Foundation.framework */; };
 		B58CDE90192933AC001924C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58CDE8F192933AC001924C7 /* CoreGraphics.framework */; };
 		B58CDE92192933AC001924C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58CDE91192933AC001924C7 /* UIKit.framework */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		05D61C9A55574545AA6E5477 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		AC7F4EFCDB7E43E19307DEB7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B54BB8261937CC3F0089B05C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		B58CDE8A192933AC001924C7 /* backflipjs-ios-webview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "backflipjs-ios-webview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B58CDE8D192933AC001924C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B58CDE8F192933AC001924C7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -72,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B54BB8271937CC3F0089B05C /* CoreLocation.framework in Frameworks */,
 				B58CDEC8192980C9001924C7 /* SystemConfiguration.framework in Frameworks */,
 				B58CDE90192933AC001924C7 /* CoreGraphics.framework in Frameworks */,
 				B58CDE92192933AC001924C7 /* UIKit.framework in Frameworks */,
@@ -117,6 +120,7 @@
 		B58CDE8C192933AC001924C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B54BB8261937CC3F0089B05C /* CoreLocation.framework */,
 				B58CDEC7192980C9001924C7 /* SystemConfiguration.framework */,
 				B58CDE8D192933AC001924C7 /* Foundation.framework */,
 				B58CDE8F192933AC001924C7 /* CoreGraphics.framework */,

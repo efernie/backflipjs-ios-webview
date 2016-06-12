@@ -12,10 +12,11 @@
 #import "WebViewProxy.h"
 
 @interface backflipViewController ()
-
 @end
 
 @implementation backflipViewController
+
+@synthesize locationManager;
 
 - (void)viewDidLoad {
 	
@@ -23,7 +24,16 @@
 	
 	[self _setupProxy];
 	
-	self.baseURL = @"http://192.168.1.137:3000";
+	self.baseURL = @"http://192.168.158.51:3000";
+		
+	if (self.locationManager == nil)
+    {
+		self.locationManager = [[CLLocationManager alloc] init];
+		self.locationManager.desiredAccuracy =
+		kCLLocationAccuracyNearestTenMeters;
+		self.locationManager.delegate = self;
+		}
+	[self.locationManager startUpdatingLocation];
 	
 	Reachability *reach = [Reachability reachabilityForInternetConnection];
 	reach.reachableOnWWAN = YES;
@@ -98,6 +108,8 @@
 		[r startAsynchronous];
 	}
 }
+
+// instead of assets passing throu this switch it to a proxy pass below
 - (void)interceptPageCSS {
 	STHTTPRequest *r = [STHTTPRequest requestWithURLString:@"http://192.168.1.137:3000/build/css/main.css"];
 	
@@ -167,6 +179,26 @@
 //		NSURLRequest* proxyReq = [NSURLRequest requestWithURL:[NSURL URLWithString:proxyUrl]];
 //		[NSURLConnection connectionWithRequest:proxyReq delegate:res];
 //	}];
+}
+
+- (void) locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
+{
+//	NSLog(@"%@", @"Core location has a position.");
+	CLLocation *curPos = locationManager.location;
+	
+	NSString *latitude = [[NSNumber numberWithDouble:curPos.coordinate.latitude] stringValue];
+	
+	NSString *longitude = [[NSNumber numberWithDouble:curPos.coordinate.longitude] stringValue];
+	
+	NSLog(@"Lat: %@", latitude);
+	NSString *combined = [NSString stringWithFormat:@"%@,%@", latitude, longitude];
+	NSLog(@"Long: %@", longitude);
+	[self.mobileWebView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"emitLocation('%@');", combined ]];
+}
+- (void) locationManager:(CLLocationManager *)manager
+        didFailWithError:(NSError *)error
+{
+	NSLog(@"%@", @"Core location can't get a fix.");
 }
 
 - (BOOL) prefersStatusBarHidden {

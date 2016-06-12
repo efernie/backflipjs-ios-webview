@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface backflipViewController : UIViewController <UIWebViewDelegate>
+@interface backflipViewController : UIViewController <UIWebViewDelegate, CLLocationManagerDelegate>
+
+@property (nonatomic, retain) CLLocationManager *locationManager;
 
 @property (weak, nonatomic) IBOutlet UIWebView *mobileWebView;
 
